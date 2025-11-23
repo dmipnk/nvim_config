@@ -130,7 +130,6 @@ return {
     -- - capabilities (table): Override fields in capabilities. Can be used to disable certain LSP features.
     -- - settings (table): Override the default settings passed when initializing the server.
     local servers = {
-      ts_ls = {},
       ruff = {},
       pylsp = {
         settings = {
@@ -149,13 +148,11 @@ return {
         },
       },
       html = { filetypes = { 'html', 'twig', 'hbs' } },
-      cssls = {},
       tailwindcss = {},
       dockerls = {},
-      sqlls = {},
-      terraformls = {},
       jsonls = {},
       yamlls = {},
+      rust_analyzer = {},
       lua_ls = {
         settings = {
           Lua = {
